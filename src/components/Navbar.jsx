@@ -99,24 +99,41 @@ function Navbar() {
       <div className='hidden lg:flex fixed flex-column top-[35%] left-0'>
         <ul>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px]  duration-300 bg-blue-600 '>
-            <a className='flex justify-between items-center w-full' href='/'>
+            <a
+              className='flex justify-between items-center w-full'
+              href='https://www.linkedin.com/in/patrick-macabulos-developer/'
+              target='blank'
+            >
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#333] '>
-            <a className='flex justify-between items-center w-full' href='/'>
+            <a
+              className='flex justify-between items-center w-full'
+              href='https://github.com/psmacabulos'
+              target='blank'
+            >
               Github <FaGithub size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#528d81] '>
-            <a className='flex justify-between items-center w-full' href='/'>
+            <a
+              className='flex justify-between items-center w-full'
+              href='https://1drv.ms/b/s!Ak1jT-_MMdUugq1WDTD3lzIZxpe3Lg?e=Ty8fiZ'
+              target='blank'
+            >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
           </li>
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#232936] '>
-            <a className='flex justify-between items-center w-full' href='/'>
+            <Link
+              className='flex justify-between items-center w-full'
+              to='contact'
+              smooth='{true}'
+              duration={900}
+            >
               Email <HiOutlineMail size={30} />
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
