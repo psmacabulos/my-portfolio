@@ -14,42 +14,26 @@ function Navbar() {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
 
+  const menus = ["Home", "About", "Skills", "Work", "Contact"]
+
   return (
-    <div className='fixed w-full flex justify-between items-center px-4  h-[80px]  text-gray-300  bg-[#0a192f]/95 z-2'>
+    <div className='fixed w-full flex justify-between items-center px-4  h-[80px]  text-gray-300  bg-[#0a192f]/95 z-2 shadow-md'>
       <div>
         <img src={Logo} alt='logo' style={{ width: "100px" }} />
       </div>
 
       {/* menu */}
-      <div>
-        <ul className='hidden md:flex'>
-          <li>
-            <Link className='hover:color-sky-700' to='home' smooth='{true}' duration={900}>
-              Home
+
+      <ul className='hidden md:flex'>
+        {menus.map(menu => (
+          <li key={menu} className='group transform hover:scale-125 relative duration-500'>
+            <Link to={menu.toLowerCase()} smooth='{true}' duration={900}>
+              {menu}
+              <span className='absolute bottom-0 left-0 w-full h-0.5 bg-[#2ebfa5] transform scale-x-0 origin-top transition-transform duration-300 group-hover:scale-x-50'></span>
             </Link>
           </li>
-          <li>
-            <Link to='about' smooth='{true}' duration={900}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to='skills' smooth='{true}' duration={900}>
-              Skills
-            </Link>
-          </li>
-          <li>
-            <Link to='work' smooth='{true}' duration={900}>
-              Work
-            </Link>
-          </li>
-          <li>
-            <Link to='contact' smooth='{true}' duration={900}>
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </div>
+        ))}
+      </ul>
 
       {/* Hamburger */}
       <div onClick={handleClick} className='md:hidden z-20'>
@@ -64,35 +48,20 @@ function Navbar() {
             : "hidden"
         }
       >
-        <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to='home' smooth='{true}' duration={900}>
-            Home
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          {" "}
-          <Link onClick={handleClick} to='about' smooth='{true}' duration={900}>
-            About
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          {" "}
-          <Link onClick={handleClick} to='skills' smooth='{true}' duration={900}>
-            Skills
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          {" "}
-          <Link onClick={handleClick} to='work' smooth='{true}' duration={900}>
-            Work
-          </Link>
-        </li>
-        <li className='py-6 text-4xl'>
-          {" "}
-          <Link onClick={handleClick} to='contact' smooth='{true}' duration={900}>
-            Contact
-          </Link>
-        </li>
+        {menus.map(map => (
+          <li key={map} className='py-6 group text-4xl relative'>
+            <Link
+              className='transform group-hover:scale-110 duration-900'
+              onClick={handleClick}
+              to={map.toLowerCase()}
+              smooth='{true}'
+              duration={900}
+            >
+              {map}
+              <span className='absolute bottom-0 left-0 w-full h-1 bg-[#2ebfa5] transform scale-x-0 origin-top transition-transform duration-500 group-hover:scale-x-100'></span>
+            </Link>
+          </li>
+        ))}
       </ul>
 
       {/* Social icons */}
