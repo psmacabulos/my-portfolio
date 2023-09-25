@@ -19,7 +19,7 @@ const Work = () => {
             className='shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]  group container rounded-md flex justify-center items-center mx-auto content-div border-solid border-2'
           >
             {/* hover effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
+            <div className='transition opacity-0 group-hover:opacity-100 duration-500 ease-in-out '>
               <div>
                 <span className='text-2xl font-bold text-white tracking-wider'>
                   React JS Application
@@ -45,7 +45,7 @@ const Work = () => {
             className='shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]  group container rounded-md flex justify-center items-center mx-auto content-div'
           >
             {/* hover effects */}
-            <div className='opacity-0 group-hover:opacity-100'>
+            <div className='transition opacity-0 group-hover:opacity-100 duration-500 ease-in-out'>
               <div>
                 <span className='text-2xl font-bold text-white tracking-wider'>
                   Under Development
