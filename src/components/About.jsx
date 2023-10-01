@@ -1,23 +1,54 @@
+import images from "../constants"
+
 const About = () => {
   return (
-    <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
-      <div className='flex flex-col justify-center items-center w-full h-full'>
-        <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-x-8 px-4'>
-          <div className=' sm:text-right pb-8'>
-            <p className='text-4xl font-bold inline border-b-4 border-[#2ebfa5]'>About</p>
+    <div name='about' className='bg-[#0a192f] text-gray-300 w-full sm:h-auto md:h-screen'>
+      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center  h-full w-full'>
+        <div className='mb-8'>
+          <p className='text-4xl font-bold inline border-b-4 border-[#2ebfa5]'>About</p>
+        </div>
+
+        <div className=' text-xl mt-8 text-[#8892b0]  '>
+          <div className='py-4 flex transition ease-in-out delay-150 hover:translate-x-5 duration-500 max-w-[700px] '>
+            <span className='mr-5 shrink-0'>
+              <img src={images.hand} alt='hand waving icon' className='w-8' />
+            </span>
+            <div>
+              Hello! I&apos;m <span className='font-bold text-[#ccd6f6]'>Patrick</span>, great to
+              see you!
+            </div>
           </div>
-          <div></div>
-          <div className='sm:text-right text-4xl font-bold  '>
-            <p>Hello! I&apos;m Patrick, great to see you. Please have a look around.</p>
+
+          <div className='py-4 flex transition ease-in-out delay-150 hover:translate-x-5 duration-500 max-w-[700px] '>
+            <span className='mr-5 shrink-0 '>
+              <img src={images.cursor} alt='cursor icon' className='w-8' />
+            </span>
+            <div>
+              I am known for crafting <strong className='text-[#ccd6f6]'> user-friendly </strong>{" "}
+              interfaces and
+              <strong className='text-[#ccd6f6]'> solving</strong> digital{" "}
+              <strong className='text-[#ccd6f6]'>challenges</strong>.
+            </div>
           </div>
-          <div className='mt-8 md:mt-auto'>
-            <p>
-              My past careers as a teacher, machnine operator, production planner, and hydraulic
-              fitter have given me a diverse set of skills and experiences that I bring to my work
-              as a software developer. I am committed to providing outstanding solutions to your
-              company&apos;s problems, using modern and optimized technologies that are scalable to
-              support your business growth.
-            </p>
+
+          <div className='py-4 flex transition ease-in-out delay-150 hover:translate-x-5 duration-500 max-w-[700px] '>
+            <span className='mr-5 shrink-0 '>
+              <img src={images.check} alt='cursor icon' className='w-8' />
+            </span>
+            <div>
+              My goal? Making <span className='font-bold text-[#ccd6f6]'>clients happy</span>, one
+              project at a time.
+            </div>
+          </div>
+
+          <div className='py-4 flex transition ease-in-out delay-150 hover:translate-x-5 duration-500 max-w-[700px] '>
+            <span className='mr-5 shrink-0 '>
+              <img src={images.puzzle} alt='cursor icon' className='w-8' />
+            </span>
+            <div>
+              And I forgot to add, <span className='font-bold text-[#ccd6f6]'>I love</span> playing{" "}
+              <span className='font-bold text-[#ccd6f6]'>Chess</span>!
+            </div>
           </div>
         </div>
       </div>
