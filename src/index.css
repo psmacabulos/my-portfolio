@@ -21,6 +21,10 @@
   }
 }
 
+body {
+  background-color: #0a192f;
+}
+
 .content-div {
   background-repeat: no-repeat;
   background-size: cover;
