@@ -2,7 +2,7 @@ import images from "../constants"
 
 const Skills = () => {
   return (
-    <div name='skills' className='bg-[#0a192f] text-gray-300 w-full sm:h-auto md:h-screen'>
+    <div name='skills' className='bg-[#0a192f] text-gray-300 w-full min-h-screen'>
       {/* ---------> container starts <---------- */}
 
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center  h-full w-full'>

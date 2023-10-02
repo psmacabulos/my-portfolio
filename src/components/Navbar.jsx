@@ -17,7 +17,7 @@ function Navbar() {
   const menus = ["Home", "About", "Skills", "Work", "Contact"]
 
   return (
-    <div className='fixed w-full flex justify-between items-center px-4  h-[80px]  text-gray-300  bg-[#0a192f]/95 z-2 shadow-md'>
+    <div className=' fixed w-full flex justify-between items-center px-4  h-[80px]  text-gray-300  bg-[#0a192f]/95 z-2 shadow-md'>
       <Link to='home' smooth='{true}' duration={900}>
         <img src={Logo} alt='logo' style={{ width: "100px", cursor: "pointer" }} />
       </Link>
