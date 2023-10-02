@@ -1,5 +1,5 @@
 import { HiChevronDoubleRight } from "react-icons/hi"
-
+import { Link } from "react-scroll"
 const Home = () => {
   /**
    * To do: Fix responsiveness problem as sidebar collides with h1
@@ -19,9 +19,11 @@ const Home = () => {
           self-directed projects.
         </p>
         <div className='mt-2'>
-          <button className='group text-white border-2 px-6 py-3 flex items-center hover:bg-[#2ebfa5] hover:border-[#2ebfa5] duration-700 z-10'>
-            View Work <HiChevronDoubleRight className='ml-3 group-hover:rotate-90 duration-500' />
-          </button>
+          <Link to={"work"} smooth='{true}' duration={900}>
+            <button className='group text-white border-2 px-6 py-3 flex items-center hover:bg-[#2ebfa5] hover:border-[#2ebfa5] duration-700 z-10'>
+              View Work <HiChevronDoubleRight className='ml-3 group-hover:rotate-90 duration-500' />
+            </button>
+          </Link>
         </div>
       </div>
     </div>
