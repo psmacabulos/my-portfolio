@@ -40,3 +40,16 @@ input,
 textarea {
   background-color: #ccd6f6;
 }
+
+.card-spotlight-effect {
+  position: relative;
+  pointer-events: auto;
+}
+
+.spotlight {
+  position: absolute;
+  inset: -1px;
+  opacity: 0;
+  transition: opacity 300ms;
+  pointer-events: none;
+}

@@ -26,7 +26,7 @@ function Navbar() {
 
       <ul className='hidden md:flex'>
         {menus.map(menu => (
-          <li key={menu} className='group transform hover:scale-125 relative duration-500'>
+          <li key={menu} className='group transform hover:scale-125 relative duration-500 z-10'>
             <Link to={menu.toLowerCase()} smooth='{true}' duration={900}>
               {menu}
               <span className='absolute bottom-0 left-0 w-full h-0.5 bg-[#2ebfa5] transform scale-x-0 origin-top transition-transform duration-300 group-hover:scale-x-50'></span>
