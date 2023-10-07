@@ -26,12 +26,20 @@ const Work = () => {
                 </span>
               </div>
               <div className='pt-8 text-center'>
-                <a href='https://psmacabulos.github.io/gameHarbor/'>
+                <a
+                  href='https://psmacabulos.github.io/gameHarbor/'
+                  target='_blank'
+                  rel='noreferrer noopener'
+                >
                   <button className='text-center rounded-lg px-4 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href='https://github.com/psmacabulos/gameHarbor'>
+                <a
+                  href='https://github.com/psmacabulos/gameHarbor'
+                  target='_blank'
+                  rel='noreferrer noopener'
+                >
                   <button className='text-center rounded-lg px-4 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Code
                   </button>
@@ -48,23 +56,25 @@ const Work = () => {
             <div className='transition opacity-0 group-hover:opacity-100 duration-500 ease-in-out'>
               <div>
                 <span className='text-2xl font-bold text-white tracking-wider'>
-                  Under Development
+                  three.js, React, Vite, Node.js, tailwind css
                 </span>
               </div>
               <div className='pt-8 text-center'>
-                <a href='/'>
-                  <button
-                    disabled
-                    className='text-center rounded-lg px-4 m-2 bg-white text-gray-700 font-bold text-lg'
-                  >
+                <a
+                  href='https://psmacabulos.github.io/ai-shirt-3d/'
+                  target='_blank'
+                  rel='noreferrer noopener'
+                >
+                  <button className='text-center rounded-lg px-4 m-2 bg-white text-gray-700 font-bold text-lg'>
                     Demo
                   </button>
                 </a>
-                <a href='/'>
-                  <button
-                    disabled
-                    className='text-center rounded-lg px-4 m-2 bg-white text-gray-700 font-bold text-lg '
-                  >
+                <a
+                  href='https://github.com/psmacabulos/ai-shirt-3d'
+                  target='_blank'
+                  rel='noreferrer noopener'
+                >
+                  <button className='text-center rounded-lg px-4 m-2 bg-white text-gray-700 font-bold text-lg '>
                     Code
                   </button>
                 </a>
