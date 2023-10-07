@@ -2,7 +2,10 @@ import images from "../constants"
 
 const About = () => {
   return (
-    <div name='about' className='bg-[#0a192f] text-gray-300 w-full min-h-screen landscape:mt-40'>
+    <div
+      name='about'
+      className='bg-[#0a192f] text-gray-300 w-full min-h-screen landscape:mt-40 flex flex-col justify-center items-center '
+    >
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center  h-full w-full'>
         <div className='mb-5'>
           <p className='text-4xl font-bold inline border-b-4 border-[#2ebfa5]'>About</p>

@@ -2,13 +2,16 @@ import images from "../constants"
 
 const Skills = () => {
   return (
-    <div name='skills' className='bg-[#0a192f] text-gray-300 w-full min-h-screen'>
+    <div
+      name='skills'
+      className='bg-[#0a192f] text-gray-300 w-full min-h-screen flex flex-col justify-center items-start'
+    >
       {/* ---------> container starts <---------- */}
 
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center  h-full w-full'>
         <div>
           <p className='text-4xl font-bold inline border-b-4 border-[#2ebfa5]'>Skills</p>
-          <p className='py-4 mt-8'>// These are the technologies I&apos;ve worked with</p>
+          <p className='py-4 mt-8'>These are the technologies I&apos;ve worked with</p>
         </div>
         {/* ----> container ends<---------- */}
         <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>

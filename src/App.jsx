@@ -62,7 +62,7 @@ function App() {
         className='spotlight'
         style={{
           opacity,
-          background: `radial-gradient(700px circle at ${position.x}px ${position.y}px, rgba(255,255,255,.04), transparent 40%)`,
+          background: `radial-gradient(700px circle at ${position.x}px ${position.y}px, rgba(255,255,255,.08), transparent 20%)`,
         }}
       />
 

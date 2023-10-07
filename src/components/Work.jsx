@@ -3,12 +3,15 @@ import ai_shirt from "../assets/projects/ai_shirt.jpg"
 
 const Work = () => {
   return (
-    <div name='work' className='w-full min-h-screen text-gray-300 bg-[#0a192a]'>
+    <div
+      name='work'
+      className='w-full min-h-screen text-gray-300 bg-[#0a192a] flex flex-col justify-center items-center'
+    >
       {/* ---------> container starts <---------- */}
       <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline border-b-4 border-color border-[#2ebfa5]'>Work</p>
-          <p className=' py-6 mt-8'>// Check out some of my recent work</p>
+          <p className=' py-6 mt-8'>Check out some of my recent work</p>
         </div>
         {/* ----> container ends<---------- */}
         <div className='w-full grid sm:grid-cols-1 md:grid-cols-2 gap-4 text-center align-middle py-8'>
