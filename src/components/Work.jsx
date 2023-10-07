@@ -21,8 +21,8 @@ const Work = () => {
             {/* hover effects */}
             <div className='transition opacity-0 group-hover:opacity-100 duration-500 ease-in-out '>
               <div>
-                <span className='text-2xl font-bold text-white tracking-wider'>
-                  React JS Application
+                <span className='text-2xl font-bold text-white '>
+                  React.js, Rawg.io API, CSS3, Chakra UI
                 </span>
               </div>
               <div className='pt-8 text-center'>
@@ -55,8 +55,8 @@ const Work = () => {
             {/* hover effects */}
             <div className='transition opacity-0 group-hover:opacity-100 duration-500 ease-in-out'>
               <div>
-                <span className='text-2xl font-bold text-white tracking-wider'>
-                  three.js, React, Vite, Node.js, tailwind css
+                <span className='text-2xl font-bold text-white p-2'>
+                  Three.js, React.js, Vitejs, Node.js, Tailwind CSS, DALLE AI
                 </span>
               </div>
               <div className='pt-8 text-center'>
